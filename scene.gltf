@@ -3,86 +3,86 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 18,
+      "count": 23040,
       "max": [
-        66254.0859375,
-        66254.0859375,
-        66254.0859375
+        1.1665745973587036,
+        1.1700774431228638,
+        1.175180196762085
       ],
       "min": [
-        -66254.0859375,
-        -66254.0859375,
-        -66254.0859375
+        -1.1665745973587036,
+        -1.1700775623321533,
+        -1.1751799583435059
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 216,
+      "byteOffset": 276480,
       "componentType": 5126,
-      "count": 18,
+      "count": 23040,
       "max": [
-        0.5773502588272095,
-        0.5773502588272095,
-        0.5773502588272095
+        0.9998340010643005,
+        1.0,
+        1.0
       ],
       "min": [
-        -0.5773502588272095,
-        -0.5773502588272095,
-        -0.5773502588272095
+        -0.9998339414596558,
+        -1.0,
+        -1.0
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 1,
       "componentType": 5126,
-      "count": 18,
+      "count": 23040,
       "max": [
-        0.9996251463890076,
-        0.9993276596069336
+        0.9749888777732849,
+        0.4435804486274719
       ],
       "min": [
-        0.0005196243291720748,
-        8.118152618408203e-05
+        0.025011438876390457,
+        0.028801526874303818
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 36,
+      "count": 45696,
       "type": "SCALAR"
     }
   ],
   "asset": {
     "extras": {
-      "author": "stylized skybox (https://sketchfab.com/skybox_)",
+      "author": "tamminen (https://sketchfab.com/tamminen)",
       "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
-      "source": "https://sketchfab.com/3d-models/free-stylized-skybox-cityskyline-001-e7f1513513c54f65b1614e838f941a90",
-      "title": "FREE Stylized Skybox CitySkyLine 001"
+      "source": "https://sketchfab.com/3d-models/new-surface-study-1-dc116ba0b49941829c6918c6071c3fd0",
+      "title": "New Surface study 1"
     },
-    "generator": "Sketchfab-15.29.0",
+    "generator": "Sketchfab-15.34.0",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 144,
+      "byteLength": 182784,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 144,
-      "byteOffset": 144,
+      "byteLength": 184320,
+      "byteOffset": 182784,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 432,
-      "byteOffset": 288,
+      "byteLength": 552960,
+      "byteOffset": 367104,
       "byteStride": 12,
       "name": "floatBufferViews",
       "target": 34962
@@ -90,35 +90,47 @@
   ],
   "buffers": [
     {
-      "byteLength": 720,
+      "byteLength": 920064,
       "uri": "scene.bin"
     }
   ],
   "extensionsUsed": [
-    "KHR_materials_unlit"
-  ],
-  "images": [
-    {
-      "uri": "textures/Material_baseColor.png"
-    }
+    "KHR_materials_specular"
   ],
   "materials": [
     {
+      "alphaMode": "BLEND",
+      "emissiveFactor": [
+        0.272345803874119,
+        0.007272486186403721,
+        0.07143964917002005
+      ],
       "extensions": {
-        "KHR_materials_unlit": {}
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 1.0
+        }
       },
-      "name": "Material",
+      "name": "Scene_-_Root",
       "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 0
-        },
-        "metallicFactor": 0.0
+        "baseColorFactor": [
+          0.42808864491572235,
+          0.02000718798829121,
+          0.1006316028872903,
+          0.05333349587351123
+        ],
+        "metallicFactor": 0.5348587729029269,
+        "roughnessFactor": 0.28495324938133143
       }
     }
   ],
   "meshes": [
     {
-      "name": "Cube_Material_0",
+      "name": "Object_0",
       "primitives": [
         {
           "attributes": {
@@ -162,49 +174,41 @@
       "children": [
         2
       ],
+      "name": "root"
+    },
+    {
+      "children": [
+        3
+      ],
       "matrix": [
-        0.009999999776482582,
+        1.0,
         0.0,
         0.0,
         0.0,
         0.0,
+        2.220446049250313e-16,
+        1.0,
         0.0,
-        0.009999999776482582,
         0.0,
-        0.0,
-        -0.009999999776482582,
-        0.0,
+        -1.0,
+        2.220446049250313e-16,
         0.0,
         0.0,
         0.0,
         0.0,
         1.0
       ],
-      "name": "7798db87927f488f97b1aa96c4643a8b.fbx"
-    },
-    {
-      "children": [
-        3
-      ],
-      "name": "RootNode"
+      "name": "GLTF_SceneRootNode"
     },
     {
       "children": [
         4
       ],
-      "name": "Cube"
+      "name": "Icosphere_0"
     },
     {
       "mesh": 0,
-      "name": "Cube_Material_0"
-    }
-  ],
-  "samplers": [
-    {
-      "magFilter": 9729,
-      "minFilter": 9987,
-      "wrapS": 10497,
-      "wrapT": 10497
+      "name": "Object_4"
     }
   ],
   "scene": 0,
@@ -214,12 +218,6 @@
       "nodes": [
         0
       ]
-    }
-  ],
-  "textures": [
-    {
-      "sampler": 0,
-      "source": 0
     }
   ]
 }
